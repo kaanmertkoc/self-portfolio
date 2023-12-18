@@ -59,7 +59,13 @@ const IntroductionComponent: React.FC<IntroductionComponentProps> = ({}) => {
         </div>
       </div>
       <div className='absolute right-52 top-36 w-[540px] h-[540px]'>
-        <Image width={540} height={540} src={memoji} alt='memoji' />
+        <Image
+          loading='lazy'
+          width={540}
+          height={540}
+          src={memoji}
+          alt='memoji'
+        />
       </div>
     </div>
   );

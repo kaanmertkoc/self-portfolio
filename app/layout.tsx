@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeaderGradient from '../components/HeaderGradient';
-import Footer from '../components/Footer';
-import FooterGradient from '../components/FooterGradient';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Kaan Mert Koç',

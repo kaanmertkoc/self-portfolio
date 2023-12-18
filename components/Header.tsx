@@ -23,7 +23,13 @@ const Header = () => {
     >
       <div className='p-4 flex flex-row items-center justify-between w-full'>
         <div className='flex flex-row items-center'>
-          <Image width={64} height={26} alt='logo' src={Logo1White} />
+          <Image
+            loading='lazy'
+            width={64}
+            height={26}
+            alt='logo'
+            src={Logo1White}
+          />
           <CustomText fontWeight={500} style={textStyle}>
             About
           </CustomText>
@@ -46,6 +52,7 @@ const Header = () => {
             target='_blank'
           >
             <Image
+              loading='lazy'
               width={24}
               height={24}
               className='opacity-75'
@@ -54,6 +61,7 @@ const Header = () => {
             />
           </Link>
           <Image
+            loading='lazy'
             width={24}
             height={24}
             className='ml-6 opacity-75'
@@ -62,6 +70,7 @@ const Header = () => {
           />
           <Link href={'https://www.github.com/kaanmertkoc'}>
             <Image
+              loading='lazy'
               width={24}
               height={24}
               className='ml-6 opacity-75'
@@ -76,6 +85,7 @@ const Header = () => {
             }}
           />
           <Image
+            loading='lazy'
             width={24}
             height={24}
             className='ml-6 opacity-75'

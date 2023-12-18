@@ -17,7 +17,13 @@ const SelectedWorkCard: React.FC<SelectedWorkCardProps> = ({
       className='flex flex-row items-center justify-start w-[1024px] rounded-[32px]  bg-[#181818] mt-8 relative z-1'
     >
       <div className='w-[500px] flex flex-col items-start justify-start ml-16 mt-16 mb-16'>
-        <Image width={70} height={70} alt='logo' src={selectedWork.logo} />
+        <Image
+          loading='lazy'
+          width={70}
+          height={70}
+          alt='logo'
+          src={selectedWork.logo}
+        />
         <CustomText style={{ marginTop: 16, fontSize: 32 }} fontWeight={700}>
           {selectedWork.name}
         </CustomText>
@@ -32,6 +38,7 @@ const SelectedWorkCard: React.FC<SelectedWorkCardProps> = ({
         </CustomText>
       </div>
       <Image
+        loading='lazy'
         width={300}
         height={600}
         alt='logo'

@@ -5,7 +5,13 @@ import GradientImage from '../public/fg_new.png';
 const FooterGradient = () => {
   return (
     <div className='absolute z-0 self-center'>
-      <Image width={1440} height={550} alt='gradient' src={GradientImage} />
+      <Image
+        loading='lazy'
+        width={1440}
+        height={550}
+        alt='gradient'
+        src={GradientImage}
+      />
     </div>
   );
 };

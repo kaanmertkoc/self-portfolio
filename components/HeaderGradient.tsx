@@ -5,6 +5,7 @@ const HeaderGradient = () => {
   return (
     <div className='absolute top-0 z-0 self-center'>
       <Image
+        loading='lazy'
         width={1440}
         height={550}
         alt='gradient'

@@ -14,7 +14,13 @@ const Footer = () => {
       />
       <div className='w-[1024px] flex flex-row items-start justify-between mt-20'>
         <div>
-          <Image width={92} height={38} alt='logo' src={Logo1White} />
+          <Image
+            loading='lazy'
+            width={92}
+            height={38}
+            alt='logo'
+            src={Logo1White}
+          />
           <CustomText
             style={{
               marginTop: 16,
