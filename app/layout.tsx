@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeaderGradient from '../components/HeaderGradient';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -21,6 +23,7 @@ export default function RootLayout({
         <Header />
         <HeaderGradient />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
