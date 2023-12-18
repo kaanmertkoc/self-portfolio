@@ -2,10 +2,10 @@ import React from 'react';
 import Logo1White from '../public/Logo1White.png';
 import Image from 'next/image';
 import CustomText from './CustomText';
-import linkedin from '../public/linkedin.png';
+import linkedin from '../public/LinkedIn.png';
 import twitter from '../public/X.png';
-import github from '../public/github.png';
-import sun from '../public/sun.png';
+import github from '../public/Github.png';
+import sun from '../public/Sun.png';
 import Link from 'next/link';
 
 const Header = () => {
