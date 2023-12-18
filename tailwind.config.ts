@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'sf-display': ['SF Pro Display', 'sans-serif'],
+      },
       colors: {
         darkBg: '#0D0D0D',
         lightBg: '#FBFBFB',
