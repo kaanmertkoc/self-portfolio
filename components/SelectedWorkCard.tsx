@@ -36,7 +36,7 @@ const SelectedWorkCard: React.FC<SelectedWorkCardProps> = ({
         height={600}
         alt='logo'
         src={selectedWork.example}
-        className='absolute right-0 rotate-6 bottom-0 z-0'
+        className='absolute right-0 rotate-6 bottom-[-10px] z-0'
       />
     </div>
   );

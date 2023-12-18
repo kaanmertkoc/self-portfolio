@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='z-1 flex flex-col' data-theme='dark'>
+      <body className=' z-1 flex flex-col' data-theme='dark'>
         <Header />
         <HeaderGradient />
         {children}

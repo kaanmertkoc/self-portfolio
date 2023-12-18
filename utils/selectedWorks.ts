@@ -7,7 +7,7 @@ import hypercut_example from '../public/hypercut_example.png';
 
 export const SelectedWorks = [
   {
-    name: 'Aposto! Mobile (Istanbul)',
+    name: 'Aposto! (Istanbul)',
     description: `Aposto! is a digital media company based in Istanbul and New York. Beginning in 2021, launched Aposto! mobile application.
         Launched aposto.com by optimizing SEO and user experience first reader web application with features like inbox, reading,
         adding to read list, discovering newsletters, authors and premium models. 

@@ -35,7 +35,7 @@ const IntroductionComponent: React.FC<IntroductionComponentProps> = ({}) => {
       </CustomText>
 
       <div className='flex flex-row items-center mt-10'>
-        <div className='w-[196px] h-[60px] px-8 py-4 bg-gradient-to-b from-zinc-900 to-neutral-900 rounded-[9px] shadow-inner justify-center items-center gap-2 inline-flex'>
+        <div className='w-[196px] h-[60px] px-8 py-4 bg-gradient-to-b from-zinc-900 to-neutral-900 rounded-[9px] shadow-inner justify-center items-center gap-2 inline-flex transition duration-500 hover:scale-105 cursor-pointer hover:shadow-slate-400 hover:drop-shadow-sm hover:shadow-sm'>
           <CustomText
             fontWeight={500}
             style={{
@@ -46,7 +46,7 @@ const IntroductionComponent: React.FC<IntroductionComponentProps> = ({}) => {
           </CustomText>
         </div>
 
-        <div className='w-[170px] h-[60px] px-8 py-4 bg-gradient-to-b from-zinc-900 to-neutral-900 rounded-[9px] shadow-inner justify-center items-center gap-2 inline-flex ml-4'>
+        <div className='w-[170px] h-[60px] px-8 py-4 bg-gradient-to-b from-zinc-900 to-neutral-900 rounded-[9px] shadow-inner justify-center items-center gap-2 inline-flex ml-4 transition duration-500 hover:scale-105 cursor-pointer hover:shadow-slate-400 hover:drop-shadow-sm hover:shadow-sm'>
           <CustomText
             fontWeight={500}
             style={{
