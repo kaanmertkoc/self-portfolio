@@ -94,7 +94,7 @@ const Footer = () => {
               Contact
             </CustomText>
           </div>
-          <div className='flex flex-col items-start justify-start ml-32'>
+          <div className='flex flex-col items-start justify-start ml-24'>
             <CustomText
               style={{
                 color: '#fff',
