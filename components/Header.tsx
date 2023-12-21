@@ -39,9 +39,11 @@ const Header = () => {
           <CustomText fontWeight={500} style={textStyle}>
             Notebook
           </CustomText>
-          <CustomText fontWeight={500} style={textStyle}>
-            Contact
-          </CustomText>
+          <Link href={'/contact'}>
+            <CustomText fontWeight={500} style={textStyle}>
+              Contact
+            </CustomText>
+          </Link>
           <CustomText fontWeight={500} style={textStyle}>
             More
           </CustomText>
