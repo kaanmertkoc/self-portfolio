@@ -1,6 +1,7 @@
 import GetToKnowMe from '../components/GetToKnowMe';
 import IntroductionComponent from '../components/IntroductionComponent';
 import SelectedWorks from '../components/SelectedWorks';
+import WorkTogether from '../components/WorkTogether';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <IntroductionComponent />
       <SelectedWorks />
       <GetToKnowMe />
+      <WorkTogether />
     </main>
   );
 }
