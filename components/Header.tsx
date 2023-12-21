@@ -60,15 +60,17 @@ const Header = () => {
               src={linkedin}
             />
           </Link>
-          <Image
-            loading='lazy'
-            width={24}
-            height={24}
-            className='ml-6 opacity-75'
-            alt='twitter'
-            src={twitter}
-          />
-          <Link href={'https://www.github.com/kaanmertkoc'}>
+          <Link href={'https://www.x.com/kaanmertkoc'} target='_blank'>
+            <Image
+              loading='lazy'
+              width={24}
+              height={24}
+              className='ml-6 opacity-75'
+              alt='twitter'
+              src={twitter}
+            />
+          </Link>
+          <Link target='_blank' href={'https://www.github.com/kaanmertkoc'}>
             <Image
               loading='lazy'
               width={24}
