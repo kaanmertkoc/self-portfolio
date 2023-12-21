@@ -1,5 +1,7 @@
 import React from 'react';
 import CustomText from './CustomText';
+import GetToKnowMeCard from './GetToKnowMeCard';
+import { gettoknowme } from '../utils/gettoknowme';
 
 const GetToKnowMe = () => {
   return (
@@ -10,6 +12,14 @@ const GetToKnowMe = () => {
       >
         Get to know me
       </CustomText>
+      <div className='flex flex-row justify-between mt-20'>
+        <GetToKnowMeCard aboutMe={gettoknowme[1]} />
+        <GetToKnowMeCard aboutMe={gettoknowme[1]} />
+      </div>
+      <div className='flex flex-row justify-between mt-4'>
+        <GetToKnowMeCard aboutMe={gettoknowme[2]} />
+        <GetToKnowMeCard aboutMe={gettoknowme[3]} />
+      </div>
     </div>
   );
 };
