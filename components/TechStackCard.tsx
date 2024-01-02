@@ -13,11 +13,18 @@ const TechStackCard = ({ techStack, style }: TechStackCardProps) => {
       style={{
         border: '1px solid #383737',
       }}
-      className='transition duration-500 hover:scale-110  relative w-[330px] h-[330px] bg-[#181818] rounded-[22px] flex flex-col items-center justify-center'
+      className='mt-4 flex flex-row items-center transition duration-500 hover:scale-110 relative w-full md:w-[330px] md:h-[330px] bg-[#181818] rounded-[22px] md:justify-center md:flex md:flex-col md:items-center justify-start'
     >
-      <Image width={114} height={114} src={techStack.icon} alt='techStack' />
-      <div className='absolute bottom-4 w-[90%] flex flex-row items-center justify-between mt-10'>
-        <CustomText fontWeight={600} style={{ fontSize: 20, color: '#fff' }}>
+      <Image
+        src={techStack.icon}
+        alt='techStack'
+        className='order-1 w-16 h-16 md:h-28 md:w-28 ml-4'
+      />
+      <div className='md:absolute bottom-4 w-full md:w-[90%] flex flex-row items-center justify-between mt-10 order-2'>
+        <CustomText
+          className='text-[16px] md:text-[20px] text-white'
+          fontWeight={600}
+        >
           {techStack.title}
         </CustomText>
         <div
@@ -28,7 +35,7 @@ const TechStackCard = ({ techStack, style }: TechStackCardProps) => {
         >
           <CustomText
             fontWeight={400}
-            style={{ fontSize: 14, color: '#808080' }}
+            className='text-[11px] md:text-[14px] text-[#808080]'
           >
             {techStack.category}
           </CustomText>
