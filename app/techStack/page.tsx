@@ -5,7 +5,7 @@ import { devDesignStack } from '../../utils/techStack';
 export default function TechStackPage() {
   return (
     <div className='flex min-h-screen flex-col items-center'>
-      <div className='w-[1024px] items-center mt-32'>
+      <div className='w-full md:w-[1024px] items-center mt-32'>
         <CustomText fontWeight={700} style={{ fontSize: 80, color: '#fff' }}>
           Tech Stack
         </CustomText>
@@ -23,7 +23,7 @@ export default function TechStackPage() {
         }}
         className='mt-16 w-screen'
       />
-      <div className='w-[1024px] items-center mt-12'>
+      <div className='w-full md:w-[1024px] items-center mt-12'>
         <CustomText
           fontWeight={700}
           style={{ fontSize: 48, color: '#808080', alignSelf: 'flex-start' }}
