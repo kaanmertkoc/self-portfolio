@@ -7,6 +7,7 @@ import twitter from '../public/X.png';
 import github from '../public/Github.png';
 import sun from '../public/Sun.png';
 import Link from 'next/link';
+import CustomLink from './CustomLink';
 
 const Header = () => {
   const textStyle = {
@@ -23,22 +24,38 @@ const Header = () => {
     >
       <div className='p-4 flex flex-row items-center justify-between w-full'>
         <div className='flex flex-row items-center'>
-          <Image
-            loading='lazy'
-            width={64}
-            height={26}
-            alt='logo'
-            src={Logo1White}
-          />
+          <Link href={'/'}>
+            <Image
+              loading='lazy'
+              width={64}
+              height={26}
+              alt='logo'
+              src={Logo1White}
+            />
+          </Link>
           <CustomText fontWeight={500} style={textStyle}>
             About
           </CustomText>
-          <CustomText fontWeight={500} style={textStyle}>
-            Work
-          </CustomText>
-          <CustomText fontWeight={500} style={textStyle}>
-            Notebook
-          </CustomText>
+          <CustomLink
+            href='/projects'
+            text='Projects'
+            textStyle={textStyle}
+            target='_self'
+            textFontWeight={500}
+          />
+          <CustomLink
+            href='/techStack'
+            text='Tech Stack'
+            textStyle={textStyle}
+            target='_self'
+            textFontWeight={500}
+          />
+
+          <Link href={'/techStack'}>
+            <CustomText fontWeight={500} style={textStyle}>
+              Tech Stack
+            </CustomText>
+          </Link>
           <Link href={'/contact'}>
             <CustomText fontWeight={500} style={textStyle}>
               Contact
