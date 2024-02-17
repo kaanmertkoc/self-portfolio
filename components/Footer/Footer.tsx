@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Logo1White from '../public/Logo1White.png';
-import CustomText from './CustomText';
+import Logo1White from '@/public/Logo1White.png';
+import CustomText from '../common/CustomText';
 import FooterGradient from './FooterGradient';
 
 const Footer = () => {

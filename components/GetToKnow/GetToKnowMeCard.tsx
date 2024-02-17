@@ -1,6 +1,6 @@
 import React from 'react';
-import { AboutMeCard } from '../interfaces/AboutMeCard';
-import CustomText from './CustomText';
+import { AboutMeCard } from '@/interfaces/AboutMeCard';
+import CustomText from '../common/CustomText';
 import Image from 'next/image';
 
 type GetToKnowMeCardProps = {
@@ -8,7 +8,6 @@ type GetToKnowMeCardProps = {
 };
 
 const GetToKnowMeCard = ({ aboutMe }: GetToKnowMeCardProps) => {
-
   const titleStyle = {
     fontSize: 32,
     color: '#fff',

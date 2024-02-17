@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import GradientImage from '../public/fg_new.png';
+import GradientImage from '@/public/fg_new.png';
 
 const FooterGradient = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo1White from '../public/Logo1White.png';
+import Logo1White from '@/public/Logo1White.png';
 import Image from 'next/image';
-import CustomText from './CustomText';
-import linkedin from '../public/LinkedIn.png';
-import twitter from '../public/X.png';
-import github from '../public/Github.png';
-import sun from '../public/Sun.png';
+import CustomText from '../common/CustomText';
+import linkedin from '@/public/LinkedIn.png';
+import twitter from '@/public/X.png';
+import github from '@/public/Github.png';
+import sun from '@/public/Sun.png';
 import Link from 'next/link';
 
 const Header = () => {
@@ -39,11 +39,10 @@ const Header = () => {
           <CustomText fontWeight={500} style={textStyle}>
             Notebook
           </CustomText>
-          <Link href={'/contact'}>
-            <CustomText fontWeight={500} style={textStyle}>
-              Contact
-            </CustomText>
-          </Link>
+          <CustomText fontWeight={500} style={textStyle}>
+            Contact
+          </CustomText>
+
           <CustomText fontWeight={500} style={textStyle}>
             More
           </CustomText>

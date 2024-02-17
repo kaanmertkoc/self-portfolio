@@ -1,8 +1,8 @@
 import React from 'react';
-import CustomText from '../../components/CustomText';
+import CustomText from '../../components/common/CustomText';
 import { SelectedWorks } from '../../utils/selectedWorks';
 import { SelectedWork } from '../../interfaces/SelectedWork';
-import SelectedWorkCard from '../../components/SelectedWorkCard';
+import SelectedWorkCard from '../../components/SelectedWorks/SelectedWorkCard';
 import StarsIcon from '../../public/Stars.png';
 import SendIcon from '../../public/Send.png';
 import Image from 'next/image';

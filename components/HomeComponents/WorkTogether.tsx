@@ -1,7 +1,7 @@
 import React from 'react';
-import CustomText from './CustomText';
-import CustomButton from './CustomButton';
-import SendImage from '../public/Send.png';
+import CustomText from '../common/CustomText';
+import CustomButton from '../common/CustomButton';
+import SendImage from '@/public/Send.png';
 import Image from 'next/image';
 
 const WorkTogether = () => {
