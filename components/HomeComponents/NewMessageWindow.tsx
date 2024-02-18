@@ -3,8 +3,8 @@ import close from '../public/close.png';
 import min from '../public/min.png';
 import minimize from '../public/minimize.png';
 import Image from 'next/image';
-import CustomText from './CustomText';
-import CustomButton from './CustomButton';
+import CustomText from '../common/CustomText';
+import CustomButton from '../common/CustomButton';
 const NewMessageWindow = () => {
   return (
     <div

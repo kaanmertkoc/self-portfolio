@@ -1,6 +1,6 @@
-import CustomText from '../../components/CustomText';
-import NewMessageWindow from '../../components/NewMessageWindow';
-import Socials from '../../components/Socials';
+import CustomText from '../../components/common/CustomText';
+import NewMessageWindow from '../../components/HomeComponents/NewMessageWindow';
+import Socials from '../../components/HomeComponents/Socials';
 
 export default function ContactPage() {
   return (

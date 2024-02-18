@@ -1,11 +1,13 @@
 import Image from 'next/image';
-import Logo1White from '../public/Logo1White.png';
-import CustomText from './CustomText';
+import Logo1White from '@/public/Logo1White.png';
+import CustomText from '../common/CustomText';
 import FooterGradient from './FooterGradient';
+import Link from 'next/link';
+import CustomLink from './CustomLink';
 
 const Footer = () => {
   return (
-    <footer className='w-screen flex flex-col items-center justify-center py-4 z-10'>
+    <footer className='relative w-screen flex flex-col items-center justify-center py-4 z-10'>
       <div
         className='w-screen self-center h-[1px]'
         style={{
@@ -21,16 +23,17 @@ const Footer = () => {
             alt='logo'
             src={Logo1White}
           />
-          <CustomText
-            style={{
+          <CustomLink
+            href='https://open.spotify.com/playlist/0QSf6djYZ4q4aMrSSFTdpR?si=2b7591da2b984a54'
+            text='Same song and dance.'
+            textStyle={{
               marginTop: 16,
               color: 'rgba(128, 128, 128, 0.5)',
               fontSize: 14,
             }}
-            fontWeight={400}
-          >
-            Same song and dance.
-          </CustomText>
+            textFontWeight={400}
+          />
+
           <CustomText
             style={{
               marginTop: 93,
@@ -39,7 +42,7 @@ const Footer = () => {
             }}
             fontWeight={400}
           >
-            © 2023 Kaan Mert Koç. All Rights Reserved.
+            © {new Date().getFullYear()} Kaan Mert Koç. All Rights Reserved.
           </CustomText>
         </div>
         <div className='flex flex-row items-center justify-between'>
@@ -63,36 +66,39 @@ const Footer = () => {
             >
               About
             </CustomText>
-            <CustomText
-              style={{
+            <CustomLink
+              href='/projects'
+              text='Projects'
+              textStyle={{
                 color: '#C5C5C5',
                 fontSize: 16,
                 marginTop: 16,
               }}
-              fontWeight={400}
-            >
-              Work
-            </CustomText>
-            <CustomText
-              style={{
+              textFontWeight={400}
+              target='_self'
+            />
+            <CustomLink
+              href='/techStack'
+              text='Tech Stack'
+              textStyle={{
                 color: '#C5C5C5',
                 fontSize: 16,
                 marginTop: 16,
               }}
-              fontWeight={400}
-            >
-              Tech Stack
-            </CustomText>
-            <CustomText
-              style={{
+              textFontWeight={400}
+              target='_self'
+            />
+            <CustomLink
+              href='/contact'
+              text='Contact'
+              textStyle={{
                 color: '#C5C5C5',
                 fontSize: 16,
                 marginTop: 16,
               }}
-              fontWeight={400}
-            >
-              Contact
-            </CustomText>
+              textFontWeight={400}
+              target='_self'
+            />
           </div>
           <div className='flex flex-col items-start justify-start ml-24'>
             <CustomText
@@ -104,46 +110,46 @@ const Footer = () => {
             >
               Elsewhere
             </CustomText>
-            <CustomText
-              style={{
+            <CustomLink
+              href='https://www.linkedin.com/in/kaan-mert-ko%C3%A7-2a57b5202/'
+              text='LinkedIn'
+              textStyle={{
                 color: '#C5C5C5',
                 fontSize: 16,
                 marginTop: 32,
               }}
-              fontWeight={400}
-            >
-              Email
-            </CustomText>
-            <CustomText
-              style={{
+              textFontWeight={400}
+            />
+            <CustomLink
+              href='https://www.x.com/kaanmertkoc'
+              text='Twitter'
+              textStyle={{
                 color: '#C5C5C5',
                 fontSize: 16,
                 marginTop: 16,
               }}
-              fontWeight={400}
-            >
-              Linkedin
-            </CustomText>
-            <CustomText
-              style={{
+              textFontWeight={400}
+            />
+            <CustomLink
+              href='https://www.github.com/kaanmertkoc'
+              text='GitHub'
+              textStyle={{
                 color: '#C5C5C5',
                 fontSize: 16,
                 marginTop: 16,
               }}
-              fontWeight={400}
-            >
-              GitHub
-            </CustomText>
-            <CustomText
-              style={{
+              textFontWeight={400}
+            />
+            <CustomLink
+              href='https://www.discord.com/users/kaanmertkoc#0001'
+              text='Discord'
+              textStyle={{
                 color: '#C5C5C5',
                 fontSize: 16,
                 marginTop: 16,
               }}
-              fontWeight={400}
-            >
-              Discord
-            </CustomText>
+              textFontWeight={400}
+            />
           </div>
         </div>
       </div>

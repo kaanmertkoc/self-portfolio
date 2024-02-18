@@ -1,7 +1,7 @@
 import React from 'react';
-import { SelectedWork } from '../interfaces/SelectedWork';
+import { SelectedWork } from '../../interfaces/SelectedWork';
 import Image from 'next/image';
-import CustomText from './CustomText';
+import CustomText from '../common/CustomText';
 type SelectedWorkCardProps = {
   selectedWork: SelectedWork;
 };

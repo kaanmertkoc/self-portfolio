@@ -1,6 +1,6 @@
 import React from 'react';
-import CustomText from './CustomText';
-import memoji from '../public/memoji.png';
+import CustomText from '../common/CustomText';
+import memoji from '@/public/memoji.png';
 import Image from 'next/image';
 
 interface IntroductionComponentProps {}

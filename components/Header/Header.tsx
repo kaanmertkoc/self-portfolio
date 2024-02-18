@@ -1,12 +1,11 @@
-import React from 'react';
-import Logo1White from '../public/Logo1White.png';
+import github from '@/public/Github.png';
+import linkedin from '@/public/LinkedIn.png';
+import Logo1White from '@/public/Logo1White.png';
+import sun from '@/public/Sun.png';
+import twitter from '@/public/X.png';
 import Image from 'next/image';
-import CustomText from './CustomText';
-import linkedin from '../public/LinkedIn.png';
-import twitter from '../public/X.png';
-import github from '../public/Github.png';
-import sun from '../public/Sun.png';
 import Link from 'next/link';
+import CustomText from '../common/CustomText';
 
 const Header = () => {
   const textStyle = {
@@ -14,6 +13,7 @@ const Header = () => {
     marginLeft: 40,
     color: '#C5C5C5',
   };
+
   return (
     <nav
       style={{
@@ -23,22 +23,24 @@ const Header = () => {
     >
       <div className='p-4 flex flex-row items-center justify-between w-full'>
         <div className='flex flex-row items-center'>
-          <Image
-            loading='lazy'
-            width={64}
-            height={26}
-            alt='logo'
-            src={Logo1White}
-          />
+          <Link href={'/'}>
+            <Image
+              loading='lazy'
+              width={64}
+              height={26}
+              alt='logo'
+              src={Logo1White}
+            />
+          </Link>
           <CustomText fontWeight={500} style={textStyle}>
             About
           </CustomText>
-          <CustomText fontWeight={500} style={textStyle}>
-            Work
-          </CustomText>
-          <CustomText fontWeight={500} style={textStyle}>
-            Notebook
-          </CustomText>
+
+          <Link href={'/techStack'}>
+            <CustomText fontWeight={500} style={textStyle}>
+              Tech Stack
+            </CustomText>
+          </Link>
           <Link href={'/contact'}>
             <CustomText fontWeight={500} style={textStyle}>
               Contact
