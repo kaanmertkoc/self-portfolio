@@ -1,5 +1,5 @@
-import CustomText from '../../components/CustomText';
-import TechStackCard from '../../components/TechStackCard';
+import CustomText from '../../components/common/CustomText';
+import TechStackCard from '../../components/HomeComponents/TechStackCard';
 import { devDesignStack } from '../../utils/techStack';
 
 export default function TechStackPage() {

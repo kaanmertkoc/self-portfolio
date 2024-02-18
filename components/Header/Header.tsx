@@ -1,13 +1,11 @@
-import React from 'react';
-import Logo1White from '../public/Logo1White.png';
+import github from '@/public/Github.png';
+import linkedin from '@/public/LinkedIn.png';
+import Logo1White from '@/public/Logo1White.png';
+import sun from '@/public/Sun.png';
+import twitter from '@/public/X.png';
 import Image from 'next/image';
-import CustomText from './CustomText';
-import linkedin from '../public/LinkedIn.png';
-import twitter from '../public/X.png';
-import github from '../public/Github.png';
-import sun from '../public/Sun.png';
 import Link from 'next/link';
-import CustomLink from './CustomLink';
+import CustomText from '../common/CustomText';
 
 const Header = () => {
   const textStyle = {
@@ -15,6 +13,7 @@ const Header = () => {
     marginLeft: 40,
     color: '#C5C5C5',
   };
+
   return (
     <nav
       style={{
@@ -36,20 +35,6 @@ const Header = () => {
           <CustomText fontWeight={500} style={textStyle}>
             About
           </CustomText>
-          <CustomLink
-            href='/projects'
-            text='Projects'
-            textStyle={textStyle}
-            target='_self'
-            textFontWeight={500}
-          />
-          <CustomLink
-            href='/techStack'
-            text='Tech Stack'
-            textStyle={textStyle}
-            target='_self'
-            textFontWeight={500}
-          />
 
           <Link href={'/techStack'}>
             <CustomText fontWeight={500} style={textStyle}>

@@ -1,7 +1,7 @@
 import React from 'react';
-import CustomText from './CustomText';
-import { SelectedWorks as works } from '../utils/selectedWorks';
-import { SelectedWork } from '../interfaces/SelectedWork';
+import CustomText from '../common/CustomText';
+import { SelectedWorks as works } from '../../utils/selectedWorks';
+import { SelectedWork } from '../../interfaces/SelectedWork';
 import SelectedWorkCard from './SelectedWorkCard';
 
 interface SelectedWorksProps {}

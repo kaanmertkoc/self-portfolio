@@ -1,7 +1,7 @@
 import React from 'react';
-import CustomText from './CustomText';
+import CustomText from '../common/CustomText';
 import GetToKnowMeCard from './GetToKnowMeCard';
-import { gettoknowme } from '../utils/gettoknowme';
+import { gettoknowme } from '@/utils/gettoknowme';
 
 const GetToKnowMe = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import { TechStackCardInterface } from '../interfaces/TechStackCard';
+import { TechStackCardInterface } from '../../interfaces/TechStackCard';
 import Image from 'next/image';
-import CustomText from './CustomText';
+import CustomText from '../common/CustomText';
 
 type TechStackCardProps = {
   techStack: TechStackCardInterface;
