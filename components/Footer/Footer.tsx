@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import Logo1White from '@/public/Logo1White.png';
+import Image from 'next/image';
+import CustomLink from '../common/CustomLink';
 import CustomText from '../common/CustomText';
 import FooterGradient from './FooterGradient';
-import Link from 'next/link';
-import CustomLink from './CustomLink';
 
 const Footer = () => {
   return (
@@ -75,7 +74,6 @@ const Footer = () => {
                 marginTop: 16,
               }}
               textFontWeight={400}
-              target='_self'
             />
             <CustomLink
               href='/techStack'
@@ -86,7 +84,6 @@ const Footer = () => {
                 marginTop: 16,
               }}
               textFontWeight={400}
-              target='_self'
             />
             <CustomLink
               href='/contact'
@@ -97,7 +94,6 @@ const Footer = () => {
                 marginTop: 16,
               }}
               textFontWeight={400}
-              target='_self'
             />
           </div>
           <div className='flex flex-col items-start justify-start ml-24'>
