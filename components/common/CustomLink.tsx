@@ -2,9 +2,8 @@ import Link from 'next/link';
 import CustomText from './CustomText';
 import Image from 'next/image';
 interface CustomLinkProps {
-  href: URL;
-  children: React.ReactElement<typeof CustomText | typeof Image>;
-  fontWeight?: number;
+  href: URL | string;
+  textFontWeight?: number;
   linkStyle?: React.CSSProperties;
   textStyle?: React.CSSProperties;
   isIcon?: boolean;
@@ -13,20 +12,21 @@ interface CustomLinkProps {
   iconStyles?: React.CSSProperties;
   iconSrc?: string;
   iconAlt?: string;
+  text?: string;
 }
 
 const CustomLink = ({
   href,
-  fontWeight,
+  textFontWeight,
   linkStyle,
   textStyle,
-  children,
   isIcon,
   iconWidth,
   iconHeight,
   iconStyles,
   iconSrc,
   iconAlt,
+  text,
 }: CustomLinkProps) => {
   return (
     <Link href={href} target={!isIcon ? '_self' : '_blank'} style={linkStyle}>
@@ -40,8 +40,8 @@ const CustomLink = ({
           alt={iconAlt ?? ''}
         />
       ) : (
-        <CustomText fontWeight={fontWeight} style={textStyle}>
-          {children}
+        <CustomText fontWeight={textFontWeight} style={textStyle}>
+          {text}
         </CustomText>
       )}
     </Link>
