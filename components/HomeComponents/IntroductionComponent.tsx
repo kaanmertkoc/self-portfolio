@@ -48,7 +48,7 @@ const IntroductionComponent: React.FC<IntroductionComponentProps> = ({}) => {
           </CustomText>
         </div>
 
-        <div className='w-full mt-4 md:w-[170px] h-[60px] md:px-8 md:py-4 bg-gradient-to-b from-zinc-900 to-neutral-900 rounded-[9px] shadow-inner justify-center items-center gap-2 inline-flex md:ml-4 transition duration-500 hover:scale-105 cursor-pointer hover:shadow-slate-400 hover:drop-shadow-sm hover:shadow-sm'>
+        <div className='w-full md:w-[170px] h-[60px] bg-gradient-to-b from-zinc-900 to-neutral-900 rounded-[9px] shadow-inner justify-center items-center gap-2 inline-flex md:ml-4 transition duration-500 hover:scale-105 cursor-pointer hover:shadow-slate-400 hover:drop-shadow-sm hover:shadow-sm'>
           <CustomText
             fontWeight={500}
             style={{
@@ -60,7 +60,7 @@ const IntroductionComponent: React.FC<IntroductionComponentProps> = ({}) => {
           </CustomText>
         </div>
       </div>
-      <div className='hidden md:absolute right-52 top-36 w-[540px] h-[540px]'>
+      <div className='hidden lg:block lg:absolute right-52 top-36 w-[540px] h-[540px]'>
         <Image
           loading='lazy'
           width={540}
